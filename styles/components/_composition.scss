@@ -61,6 +61,10 @@
       @include respond(tab-port) {
         transform: scale(1.4) translateY(-0.5rem);
       }
+
+      @include respond(mini) {
+        transform: scale(1.8) translateY(-0.5rem);
+      }
     }
   }
 
@@ -71,5 +75,12 @@
       transform: scale(1.03);
     }
   }
-  //composition:hover composition__photo:not(:hover) {
+
+  &__image-padding {
+    padding-top: 6rem;
+
+    @include respond(tab-port) {
+      padding-top: 2rem;
+    }
+  }
 }

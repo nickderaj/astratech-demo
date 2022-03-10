@@ -28,7 +28,7 @@ const About = () => {
             <a className="btn-text">Learn more &rarr;</a>
           </Link>
         </div>
-        <div className="col-1-of-2">
+        <div className="col-1-of-2 composition__image-padding">
           <div className="composition">
             <img alt="Photo 1" src="/images/tech-1.jpeg" className="composition__photo composition__photo--p1" />
             <img alt="Photo 2" src="/images/tech-2.jpeg" className="composition__photo composition__photo--p2" />
