@@ -14,12 +14,21 @@
     grid-gap: 4rem;
   }
 
+  @include respond(mini) {
+    padding: 8rem 2rem;
+  }
+
   &__element {
     width: 35vw;
 
     @include respond(tab-port) {
       text-align: center;
       width: 50vw;
+    }
+
+    @include respond(mini) {
+      text-align: center;
+      width: 70vw;
     }
 
     &:last-child {
@@ -58,6 +67,11 @@
       @include respond(phone) {
         width: 80%;
       }
+
+      @include respond(mini) {
+        margin-top: 2rem;
+        padding: 18px;
+      }
     }
   }
 
@@ -86,7 +100,7 @@
       }
 
       @include respond(mini) {
-        padding: 1rem 1.6rem;
+        padding: 1.6rem 1.6rem;
       }
 
       &:hover {
