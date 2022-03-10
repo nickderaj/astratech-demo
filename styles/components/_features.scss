@@ -1,0 +1,35 @@
+.features {
+  background-color: rgba($color-white, 0.8);
+  font-size: 1.7rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+  transition: transform 0.3s;
+  min-height: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+
+  @include respond(tab-port) {
+    font-size: 2rem;
+    padding: 2rem;
+    min-height: 10rem;
+  }
+
+  @include respond(phone) {
+    font-size: 1.7rem;
+  }
+
+  &__icon {
+    margin-bottom: 3rem;
+    display: inline-block;
+  }
+
+  &:hover {
+    transform: translateY(-0.5rem) scale(1.05);
+    box-shadow: 0 1.5rem 4rem rgba($color-primary-dark, 0.8);
+  }
+}
