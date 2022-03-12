@@ -20,6 +20,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: auto;
     width: 60%;
     height: 100%;
     padding: 0 6rem;
@@ -31,11 +32,19 @@
     @include respond(phone) {
       padding: 0 3rem;
     }
+
+    @include respond(mini) {
+      padding: 0 6rem;
+    }
   }
 
   &-wrapper {
     padding: 6rem;
     background: linear-gradient(to top right, $color-primary-light, $color-primary-dark);
+
+    @include respond(mini) {
+      padding: 2rem;
+    }
   }
 
   &__text {

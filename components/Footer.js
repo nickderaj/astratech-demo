@@ -26,6 +26,7 @@ const Footer = () => {
           <button className="footer__btn footer__btn--primary footer__btn--inside uppercase">Submit</button>
         </form>
       </div>
+      <hr className="footer__divider" />
       <div className="footer__element">
         <Image src="/images/logo-white.png" alt="Logo" width="166" height="60" />
         <p className="footer__paragraph">
