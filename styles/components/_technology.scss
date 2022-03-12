@@ -20,12 +20,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: auto;
     width: 60%;
     height: 100%;
     padding: 0 6rem;
 
     @include respond(tab-port) {
+      margin: auto;
       width: 100%;
     }
 
